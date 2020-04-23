@@ -1,0 +1,8 @@
+.hidden {
+    display: none;
+}
+
+.drag-sort-active {
+  background: transparent;
+  color: transparent;
+}

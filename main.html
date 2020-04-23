@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header>
+            <div class="navbar navbar-dark bg-dark shadow-sm">
+              <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <img src="merm.svg" width="40" height="40">
+                    <strong>ToDoDoAlinkaList</strong>
+                </a>
+              </div>
+            </div>
+        </header>
+        <main role="main" class="flex-shrink-0 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col mb-5">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Привет!</h1>
+                            <p class="lead">ToDoDoAlinkaList - это список дел, органайзер.</p>
+                            <hr class="my-4">
+                            <p>Примечание: данные сохраняются в локальном хранилище (кеш).<br>
+                                Рекомендуется удалять таски перед выходом, если не планируется дальнейшая работа с ними.<br>
+                                (Таски можно перемещать)</p>                            
+                        </div>
+                        <form>
+                            <h1 class="display-5 mb-3">Добавить новый Task</h1>
+                            <div class="form-group">
+                              <label for="titleInput">Заголовок</label>
+                              <input type="text" class="form-control" id="titleInput">
+                            </div>
+                            <div class="form-group">
+                                <label for="descrInput">Описание</label>
+                                <textarea class="form-control" id="descrInput" rows="3"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="newTaskBtn">Добавить</button>
+                            <button type="button" class="btn btn-primary" id="delAllTasksBtn">Удалить все записи</button>
+                        </form>
+                    </div>
+                    <div class="col w-50">
+                        <div class="alert alert-primary" id="info">
+                            Записей нет.
+                        </div> 
+                        <div class="drag-sort-enable"id="listParentNode">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer mt-auto py-3">
+            <div class="container">
+            </div>
+        </footer>
+        <script src="main.js"></script>
+        <script src="dragAndDrop.js"></script> 
+    </body>
+</html>
+
+
+
